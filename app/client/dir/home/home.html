@@ -1,0 +1,17 @@
+<template name="Home">
+    <!--Inserting sAlert in-->
+  {{> sAlert}}
+    <!--When using the Materialize framework, each CSS lables inputs and outputs, has to be inside a div
+     class input field.-->
+  <div class="container">
+    <div class="shorten-url-box">
+      <h1 style="text-align: center;">URLs, but Shorter!</h1>
+      <div class="input-field">
+        <input type="text" placeholder="http://google.com" name='url-to-shorten' class='url-to-shorten'>
+      </div>
+      <button class="waves-effect waves-light btn shorten red lighten-1">Shorten</button>
+    </div>
+    <h4>{{shortUrl}}</h4>
+
+  </div>
+</template>
